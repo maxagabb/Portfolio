@@ -63,7 +63,14 @@
                         });
                });
                         
-           
+           $(document).ready(function(){
+               $('#RGB').hide();
+               $('#trigger').click(function(){ 
+                   $(this).hide(1000);
+                        $('#RGB').toggle(1000);
+                        });
+               
+                              });
 
 
            
@@ -98,9 +105,11 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
+                  <h1 class="text-primary" id = "RGB">  RGB</h1>
+          <h1 class="btn btn-primary btn-xl js-scroll-trigger" id = "trigger">Secret to life</h1>
         <h1 class="text-secondary">Enthusiast Portfolio</h1>
         <h3 class="text-secondary">
-          <em>A Free Bootstrap Theme by Start Bootstrap</em>
+          <em>Complete with amatuer photography</em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
       </div>
