@@ -37,17 +37,20 @@ h5 {
 
        <script>
                   $(document).ready(function(){
- 
                       
-                      
-                          $('#portfolio').find('.portfolio-item').hide();
-                      
+                        $('#portfolio').find('.portfolio-item').hide();
                         $('#portfolio').find('.mb-5'). click(function(){ 
-                        $('#portfolio').find('.portfolio-item').toggle(200);
+                            $('#portfolio').find('.portfolio-item').toggle(200);
                         });
                       
                         $('#portfolio').find('.mb-5'). mouseenter(function(){ 
-                            $('#portfolio').find('.mb-5').addClass('btn btn-primary btn-xl js-scroll-trigger');
+                            $(this).text('Press me');
+                            $(this).addClass('text-secondary btn');
+                        });
+                      
+                        $('#portfolio').find('.mb-5'). mouseleave(function(){ 
+                            $(this).text('jQuery with images');
+                            $(this).removeClass('text-secondary btn');
                         });
                       
                         $('#portfolio').find('.mb-5').mouseleave(function(){
@@ -143,7 +146,7 @@ h5 {
     <section class="content-section bg-primary text-white text-center" id="services">
       <div class="container">
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
+          <h3 class="text-secondary mb-0">My experience with Computers animated with jQuery</h3>
           <h2 class="mb-5">jQuery example with mouseenter</h2>
         </div>
         <div class="row">
@@ -152,38 +155,36 @@ h5 {
               <i class="icon-screen-smartphone"></i>
             </span>
             <h4>
-              <strong>Responsive</strong>
+              <strong> App Design</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <p class="text-faded mb-0">Using Bootstrap and jQuery I have made websites pleasant and usable both on smart-phones and PC's by hiding excessively numerous images with jQuery and oragnizing content with rows and columns </p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0 obj">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="icon-pencil"></i>
             </span>
             <h4>
-              <strong>Redesigned</strong>
+              <strong>PC Building</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <p class="text-faded mb-0">As an enthusiast for interesting PC hardware (that shakes either the high or mid-tier market) I've come to learn much about components that go into building a PC. The images of this page are of my recent PC build.</p>
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0 obj">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="icon-like"></i>
             </span>
             <h4>
-              <strong>Favorited</strong>
+              <strong>Imbedded SQL</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fa fa-heart"></i>
-              Start Bootstrap!</p>
+            <p class="text-faded mb-0">Using php, I have coded user friendly applications that make meaningful queries to an SQL database as well as update relations and tuples. I also know multiple methods of reducing DB redundancy with normal forms.</p>
           </div>
           <div class="col-lg-3 col-md-6 obj">
             <span class="service-icon rounded-circle mx-auto mb-3">
               <i class="icon-mustache"></i>
             </span>
             <h4>
-              <strong>Question</strong>
+              <strong>C++</strong>
             </h4>
-            <p class="text-faded mb-0">I mustache you a question...</p>
+            <p class="text-faded mb-0">Most recently, I've gained alot of experience with C++ from coding a Multi-level feedback Queue CPU simulator. In particular I know more of the utility of custume data types, linked-lists,  </p>
           </div>
         </div>
       </div>
@@ -203,8 +204,8 @@ h5 {
     <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
+          <h3 class="text-secondary mb-0">Hover over text below!</h3>
+          <h2 class="mb-5">MLFQ with MLFQ</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
@@ -241,7 +242,7 @@ h5 {
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" href="#">
+            <a class="portfolio-item" href="img/portfolio-4.jpg">
               <span class="caption">
                 <span class="caption-content">
                   <h2>Workspace</h2>
